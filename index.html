@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Car Racing</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas"></canvas>
+
+      <section id="loading-screen" class="panel visible">
+        <h1>Loading 3D Car Racing</h1>
+        <div class="progress-track"><div id="loading-progress" class="progress-bar"></div></div>
+        <p id="loading-text">Preparing assets...</p>
+      </section>
+
+      <section id="main-menu" class="panel hidden">
+        <h1>3D Car Racing</h1>
+        <div class="coin-pill">Coins: <span id="menu-coin-count">0</span></div>
+        <div class="menu-actions">
+          <button id="play-btn">Play</button>
+          <button id="settings-btn">Settings</button>
+          <button id="shop-btn">Shop</button>
+        </div>
+      </section>
+
+      <section id="sub-loading" class="panel hidden compact">
+        <h2>Game Loading...</h2>
+      </section>
+
+      <section id="hud" class="hidden">
+        <div>Score: <span id="hud-score">0</span></div>
+        <div>Speed: <span id="hud-speed">0</span> km/h</div>
+        <div>Coins: <span id="hud-coins">0</span></div>
+        <div>Powerup: <span id="hud-powerup">None</span></div>
+        <div>Camera: <span id="hud-camera">Chase</span> (C to change)</div>
+      </section>
+
+      <section id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Settings</h2>
+          <label><input type="checkbox" id="toggle-sfx" checked /> Sound Effects</label>
+          <label><input type="checkbox" id="toggle-engine" checked /> Engine Sound</label>
+          <button id="toggle-time-mode">Toggle Day/Night</button>
+          <button class="close-modal">Back</button>
+        </div>
+      </section>
+
+      <section id="shop-modal" class="modal hidden">
+        <div class="modal-content">
+          <h2>Shop</h2>
+          <h3>Cars</h3>
+          <div id="car-shop-list" class="shop-grid"></div>
+          <h3>Seasons</h3>
+          <div id="season-shop-list" class="shop-grid"></div>
+          <button class="close-modal">Back</button>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
