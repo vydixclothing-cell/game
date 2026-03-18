@@ -42,13 +42,6 @@ const games = [
         "category": "Arcade",
         "image": "https://img.gamemonetize.com/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/512x384.jpg",
         "url": "https://html5.gamemonetize.co/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/"
-    },
-    {
-        "name": "Candy Rain",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/yx65q8unmpfskfwrqx7m7blv4de2s8jh/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/yx65q8unmpfskfwrqx7m7blv4de2s8jh/",
-        "isNew": true
     }
 ];
 
