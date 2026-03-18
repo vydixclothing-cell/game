@@ -36,12 +36,6 @@ const games = [
         "category": "Racing",
         "image": "https://img.gamemonetize.com/releabfjx2tfx6owemnc1nb9cshzkjwg/512x384.jpg",
         "url": "https://html5.gamemonetize.co/releabfjx2tfx6owemnc1nb9cshzkjwg/"
-    },
-    {
-        "name": "Stack Tower Pro",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/"
     }
 ];
 
