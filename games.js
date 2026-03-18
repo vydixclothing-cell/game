@@ -30,12 +30,6 @@ const games = [
         "image": "https://img.gamemonetize.com/71kap8r3c2kj9n5rl4xt89khiwf2kowt/512x384.jpg",
         "url": "https://html5.gamemonetize.co/71kap8r3c2kj9n5rl4xt89khiwf2kowt/",
         "isFeatured": true
-    },
-    {
-        "name": "Mountain Run",
-        "category": "Racing",
-        "image": "https://img.gamemonetize.com/releabfjx2tfx6owemnc1nb9cshzkjwg/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/releabfjx2tfx6owemnc1nb9cshzkjwg/"
     }
 ];
 
