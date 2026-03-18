@@ -22,13 +22,6 @@ const games = [
         "category": "Arcade",
         "image": "https://img.gamemonetize.com/wf42ep9hw8py43cv4h4vgorep74ylimk/512x384.jpg",
         "url": "https://html5.gamemonetize.co/wf42ep9hw8py43cv4h4vgorep74ylimk/"
-    },
-    {
-        "name": "Jump Masters",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/oc96sbhgq8x99xtl3ghoqk3nf85i72bs/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/oc96sbhgq8x99xtl3ghoqk3nf85i72bs/",
-        "isNew": true
     }
 ];
 
