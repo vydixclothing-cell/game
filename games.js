@@ -16,13 +16,6 @@ const games = [
         "category": "Adventure",
         "image": "https://img.gamemonetize.com/2p9kpyev7iisztb9q8cwfyu9h4f9hlv1/512x384.jpg",
         "url": "https://html5.gamemonetize.co/2p9kpyev7iisztb9q8cwfyu9h4f9hlv1/"
-    },
-    {
-        "name": "MOMENTUM",
-        "category": "Racing",
-        "image": "https://img.gamemonetize.com/71kap8r3c2kj9n5rl4xt89khiwf2kowt/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/71kap8r3c2kj9n5rl4xt89khiwf2kowt/",
-        "isFeatured": true
     }
 ];
 
