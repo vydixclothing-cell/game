@@ -24,24 +24,11 @@ const games = [
         "url": "https://html5.gamemonetize.co/wf42ep9hw8py43cv4h4vgorep74ylimk/"
     },
     {
-        "name": "Jump Masters",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/oc96sbhgq8x99xtl3ghoqk3nf85i72bs/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/oc96sbhgq8x99xtl3ghoqk3nf85i72bs/",
-        "isNew": true
-    },
-    {
         "name": "MOMENTUM",
         "category": "Racing",
         "image": "https://img.gamemonetize.com/71kap8r3c2kj9n5rl4xt89khiwf2kowt/512x384.jpg",
         "url": "https://html5.gamemonetize.co/71kap8r3c2kj9n5rl4xt89khiwf2kowt/",
         "isFeatured": true
-    },
-    {
-        "name": "Stack Tower Pro",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/4kgh5yxxwvzmaixwo6kfzp4ocbu4e99b/"
     }
 ];
 
