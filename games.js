@@ -14,6 +14,14 @@ const games = [
         "controls": "On desktop:\nUse the Left and Right arrow keys or A and D to drift sideways\nHold Spacebar to split your bubble.\n\nOn mobile: \nTap and hold anywhere on screen to split. \nSwipe or tilt your touch to navigate. \nPress or tap once to start the game and again after dying to resurface.",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/split.jpg",
         "url": "https://vydixclothing-cell.github.io/game/games/split/index.html"
+    },
+    {
+        "name": "Light House",
+        "category": "Adventure",
+        "description": "You are the guardian of a lighthouse, guiding lost ships safely through the dark ocean. Navigate them past dangerous rocky islands and other vessels using only your rotating light beam — one wrong move and they sink!",
+        "controls": "Mouse Move / Touch Drag — Aim the light beam toward the ship you want to guide",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/light-house.png",
+        "url": "https://vydixclothing-cell.github.io/game/games/light-house/index.html"
     }
 ];
 
