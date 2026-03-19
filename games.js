@@ -18,12 +18,6 @@ const games = [
         "url": "https://html5.gamemonetize.co/2p9kpyev7iisztb9q8cwfyu9h4f9hlv1/"
     },
     {
-        "name": "IRON SMASH",
-        "category": "Arcade",
-        "image": "https://img.gamemonetize.com/wf42ep9hw8py43cv4h4vgorep74ylimk/512x384.jpg",
-        "url": "https://html5.gamemonetize.co/wf42ep9hw8py43cv4h4vgorep74ylimk/"
-    },
-    {
         "name": "MOMENTUM",
         "category": "Racing",
         "image": "https://img.gamemonetize.com/71kap8r3c2kj9n5rl4xt89khiwf2kowt/512x384.jpg",
