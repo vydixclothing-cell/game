@@ -1,0 +1,307 @@
+:root {
+    --wood-light: #d2a679;
+    --wood-dark: #5d4037;
+    --wood-texture: #8d6e63;
+    --primary: #f1c40f;
+    --secondary: #3498db;
+    --accent: #e67e22;
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background-color: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Wooden Theme UI */
+.wooden-panel {
+    background: var(--wood-dark);
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent);
+    background-size: 4px 4px;
+    border: 8px solid #3e2723;
+    border-radius: 15px;
+    box-shadow: 
+        inset 0 0 20px rgba(0,0,0,0.5),
+        0 10px 30px rgba(0,0,0,0.8);
+    padding: 30px;
+}
+
+.wooden-panel-small {
+    background: var(--wood-dark);
+    border: 3px solid #3e2723;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    padding: 5px 15px;
+}
+
+.wooden-btn {
+    font-family: 'Luckiest Guy', cursive;
+    background: #8d6e63;
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid #4e342e;
+    border-radius: 12px;
+    padding: 10px 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.1s;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
+    margin: 5px;
+    min-width: 160px;
+}
+
+.wooden-btn:active {
+    transform: translateY(4px);
+    border-bottom-width: 2px;
+}
+
+.wooden-btn.small {
+    font-size: 1.1rem;
+    padding: 8px 20px;
+    min-width: 120px;
+}
+
+.wooden-btn-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #8d6e63;
+    border: none;
+    border-bottom: 4px solid #4e342e;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Luckiest Guy', cursive;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: auto;
+    transition: all 0.1s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.wooden-btn-circle:active {
+    transform: translateY(3px);
+    border-bottom-width: 2px;
+}
+
+#hud-controls {
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Screens */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.game-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 5rem;
+    color: var(--primary);
+    text-shadow: 4px 4px 0 #3e2723, 8px 8px 20px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+/* HUD */
+#hud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    z-index: 50;
+}
+
+#stats-hud {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.stat-icon-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-icon-box .icon {
+    font-size: 1.4rem;
+    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.8));
+}
+
+.stat-icon-box .value {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.3rem;
+    color: var(--primary);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+#stage-display-compact {
+    position: absolute;
+    top: 60px; /* Move down slightly */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    white-space: nowrap;
+}
+
+#pause-btn {
+    pointer-events: auto;
+}
+
+/* Level Grid */
+.level-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin: 10px 0;
+    min-height: auto;
+    padding: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.level-item {
+    width: 50px;
+    height: 50px;
+    background: #a1887f;
+    border-bottom: 4px solid #4e342e;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.level-item:active:not(.locked) {
+    transform: translateY(2px);
+    border-bottom-width: 2px;
+}
+
+.level-item.locked {
+    background: #5d4037;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.level-item.locked::after {
+    content: '🔒';
+    font-size: 0.8rem;
+}
+
+.menu-content.wooden-panel {
+    max-height: 95vh;
+    overflow-y: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Settings Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #3e2723;
+    transition: .4s;
+    border-radius: 34px;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px; width: 26px;
+    left: 4px; bottom: 4px;
+    background-color: #d2a679;
+    transition: .4s;
+    border-radius: 50%;
+}
+input:checked + .slider { background-color: var(--primary); }
+input:checked + .slider:before { transform: translateX(26px); }
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 15px 0;
+}
+
+.win-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 4rem;
+    color: var(--primary);
+}
+
+.hidden { display: none !important; }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .game-title { font-size: 3rem; }
+    .level-grid { grid-template-columns: repeat(4, 1fr); }
+    .wooden-btn { min-width: 150px; font-size: 1.2rem; }
+}
