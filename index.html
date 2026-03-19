@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Game - Free Online Games for Everyone</title>
+    <meta name="description" content="Play the best free online browser games on Lucky Game. Action, Racing, Puzzle, Adventure and more. No downloads required!">
+    <meta name="keywords" content="free online games, browser games, html5 games, play games online, lucky game">
+    <meta name="author" content="Lucky Game">
+    <meta name="application-name" content="Lucky Game">
+    <meta property="og:site_name" content="Lucky Game">
+    <meta property="og:title" content="Lucky Game - Free Online Games">
+    <meta property="og:description" content="Play the best free online browser games on Lucky Game. No downloads required!">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button id="mobile-menu-toggle" class="mobile-toggle-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-dice-d20"></i>
+                <span>LUCKY <strong>GAME</strong></span>
+            </div>
+            <a href="contact.html" class="mobile-contact-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fas fa-dice-d20"></i>
+                <span>LUCKY <strong>GAME</strong></span>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <h3>BROWSE</h3>
+                    <ul>
+                        <li class="active" data-category="all">
+                            <i class="fas fa-bullseye"></i>
+                            <span>All Games</span>
+                            <span class="count">0</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h3>CATEGORIES</h3>
+                    <ul id="category-list">
+                        <li data-category="Action"><i class="fas fa-bolt"></i> Action <span class="count">0</span></li>
+                        <li data-category="Racing"><i class="fas fa-car-side"></i> Racing <span class="count">0</span></li>
+                        <li data-category="Puzzle"><i class="fas fa-puzzle-piece"></i> Puzzle <span class="count">0</span></li>
+                        <li data-category="Adventure"><i class="fas fa-map"></i> Adventure <span class="count">0</span></li>
+                        <li data-category="Sports"><i class="fas fa-volleyball"></i> Sports <span class="count">0</span></li>
+                        <li data-category="Arcade"><i class="fas fa-ghost"></i> Arcade <span class="count">0</span></li>
+                    </ul>
+                </div>
+
+                <div class="nav-section">
+                    <h3>PAGES</h3>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar desktop-only">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="game-search" placeholder="Search games...">
+                </div>
+                <div class="top-bar-actions">
+                    <div class="theme-toggle">
+                        <div class="toggle-dot"></div>
+                    </div>
+                    <a href="contact.html" class="contact-btn">
+                        <i class="fas fa-envelope"></i> CONTACT
+                    </a>
+                </div>
+            </header>
+
+            <!-- Mobile Search -->
+            <div class="mobile-search mobile-only">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="game-search-mobile" placeholder="Search games...">
+                </div>
+            </div>
+
+            <section class="content-area">
+                <div class="page-header">
+                    <h1 id="current-category-title">All Games</h1>
+                    <p>Play instantly — no downloads, no sign-ups required. Lucky Game is the best place for free online games.</p>
+                </div>
+
+                <div class="games-grid-container">
+                    <div class="grid-header">
+                        <span id="grid-title">ALL GAMES</span>
+                    </div>
+                    
+                    <div id="games-grid" class="games-grid">
+                        <!-- Games will be injected here by script.js -->
+                        <div class="loading">Loading games...</div>
+                    </div>
+
+                    <div id="no-games" class="no-games-found hidden">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>No games found</h3>
+                        <p>Try a different search or browse a category.</p>
+                    </div>
+                </div>
+
+                <!-- SEO Content Section -->
+                <div class="seo-section">
+                    <h2>The Best Free Online Games - Lucky Game</h2>
+                    <p>Welcome to <strong>Lucky Game</strong>, the ultimate destination for free online browser-based games. We offer a wide variety of games across multiple categories including Action, Racing, Puzzle, Adventure, and more. All our games are free to play and require no registration or downloads.</p>
+                    <p>Whether you're looking for intense action games, brain-teasing puzzles, or fast-paced racing games, Lucky Game has something for everyone. Play instantly on your desktop or mobile device. Our games are optimized for all screen sizes, providing you with the best gaming experience.</p>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer-left">
+                    &copy; 2026 <span>Lucky Game</span>. All rights reserved.
+                </div>
+                <div class="footer-right">
+                    Made for gamers everywhere <i class="fas fa-cube"></i>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Full View Game Modal -->
+    <div id="game-modal" class="modal hidden">
+        <div class="modal-content full-view">
+            <div class="modal-header">
+                <div class="modal-game-info">
+                    <h2 id="modal-game-name">Game Name</h2>
+                </div>
+                <div class="modal-actions">
+                    <button id="fullscreen-btn" title="Fullscreen"><i class="fas fa-expand"></i></button>
+                    <button id="close-modal" class="close-btn">&times;</button>
+                </div>
+            </div>
+            <div class="game-frame-container">
+                <iframe id="game-iframe" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('SW registered: ', registration);
+                }).catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+            });
+        }
+    </script>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
