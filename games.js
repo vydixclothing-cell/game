@@ -22,6 +22,14 @@ const games = [
         "controls": "Mouse Move / Touch Drag — Aim the light beam toward the ship you want to guide",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/light-house.png",
         "url": "https://vydixclothing-cell.github.io/game/games/light-house/index.html"
+    },
+    {
+        "name": "Fishy Feast",
+        "category": "Adventure",
+        "description": "Fishy Feast is a fast-paced underwater survival game where you control a cartoon fish in a colorful ocean world. The rules are simple but addictive — eat fish smaller than you to grow, and dodge the bigger ones or its game over! Starting as a tiny little fish, your goal is to climb the food chain, grow as large as possible, and rack up the highest score you can before something bigger swallows you whole.",
+        "controls": "Mouse Movement Your fish follows your cursor Touch / DragOn mobile, tap and drag to move W / A / S / D Move Up / Left / Down / RightArrow KeysSame as WASD Spacebar or Escape Pause / Resume the game",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/fishy-feast.jpg",
+        "url": "https://vydixclothing-cell.github.io/game/games/fishy-feast/index.html"
     }
 ];
 
