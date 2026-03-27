@@ -30,6 +30,14 @@ const games = [
         "controls": "Mouse Movement Your fish follows your cursor Touch / DragOn mobile, tap and drag to move W / A / S / D Move Up / Left / Down / RightArrow KeysSame as WASD Spacebar or Escape Pause / Resume the game",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/fishy-feast.jpg",
         "url": "https://vydixclothing-cell.github.io/game/games/fishy-feast/index.html"
+    },
+    {
+        "name": "Snow Rider",
+        "category": "Racing",
+        "description": "Snow Rider is a fast-paced snowy adventure where you ride down icy slopes and test your reflexes. Glide through a beautiful winter landscape filled with hills, cabins, and falling snow while collecting as many gifts as possible.\n\nBut it’s not as easy as it looks! Dangerous obstacles like rocks, gaps, and tricky paths will try to stop you. You’ll need quick reactions and precise control to survive the ride and score high.\n\nThe more gifts you collect, the higher your score — so stay sharp, keep riding, and challenge yourself to beat your best run! #snow #santa #game #luckygame.ct.ws",
+        "controls": "🕹️ Controls\n⬆️ Up Arrow – Jump\n⬅️ Left Arrow – Move Left\n➡️ Right Arrow – Move Right",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/snow-rider.png",
+        "url": "https://vydixclothing-cell.github.io/game/games/snow-rider/index.html"
     }
 ];
 
