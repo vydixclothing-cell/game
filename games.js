@@ -46,6 +46,14 @@ const games = [
         "controls": "PC: Use Arrow Keys (↑ ↓ ← →) to move tiles\nMobile: Swipe Up, Down, Left, or Right",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/2048.png",
         "url": "https://vydixclothing-cell.github.io/game/games/2048/index.html"
+    },
+    {
+        "name": "Paper.io",
+        "category": "Action",
+        "description": "Paper.io 2 is a fast-paced multiplayer territory game where you capture land by drawing lines and expanding your area. Avoid enemies while creating loops, because if someone cuts your trail, you lose. Simple controls but highly competitive gameplay make it addictive and fun for all players.\npaper.io 2, io games, multiplayer game, territory game, snake game, arcade game, online io game, paper io game, free io games, action game",
+        "controls": "PC: Move using Mouse or Arrow Keys (↑ ↓ ← →)\nMobile: Swipe or drag your finger to control movement",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/paper-io.png",
+        "url": "https://vydixclothing-cell.github.io/game/games/paper-io/index.html"
     }
 ];
 
