@@ -38,6 +38,14 @@ const games = [
         "controls": "🕹️ Controls\n⬆️ Up Arrow – Jump\n⬅️ Left Arrow – Move Left\n➡️ Right Arrow – Move Right",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/snow-rider.png",
         "url": "https://vydixclothing-cell.github.io/game/games/snow-rider/index.html"
+    },
+    {
+        "name": "2048",
+        "category": "Puzzle",
+        "description": "2048 is an addictive number puzzle game where you merge tiles to reach 2048. Slide tiles, combine matching numbers, and use smart strategy to win. Simple to play but challenging to master, perfect for all puzzle lovers.\n2048 game, play 2048 online, free 2048 game, number puzzle game, brain training game, math puzzle game, addictive puzzle game, logic puzzle game, tile merging game, strategy puzzle game, free online games, best puzzle games",
+        "controls": "PC: Use Arrow Keys (↑ ↓ ← →) to move tiles\nMobile: Swipe Up, Down, Left, or Right",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/2048.png",
+        "url": "https://vydixclothing-cell.github.io/game/games/2048/index.html"
     }
 ];
 
