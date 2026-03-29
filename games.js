@@ -54,6 +54,14 @@ const games = [
         "controls": "PC: Move using Mouse or Arrow Keys (↑ ↓ ← →)\nMobile: Swipe or drag your finger to control movement",
         "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/paper-io.png",
         "url": "https://vydixclothing-cell.github.io/game/games/paper-io/index.html"
+    },
+    {
+        "name": "Drive mad",
+        "category": "Sports",
+        "description": "Drive Mad is a fun and challenging driving game where you must control your vehicle across tricky tracks filled with obstacles, jumps, and uneven roads. Balance your car carefully to avoid crashing and reach the finish line. Each level gets harder, testing your driving skills and timing.\ndrive mad, driving game, car game, physics game, online driving game, fun car game, balance game, obstacle game, free online games, skill game",
+        "controls": "PC: Use Arrow Keys (↑ ↓ ← →) to drive and balance\nMobile: Tap on left/right side of screen to control movement",
+        "image": "https://raw.githubusercontent.com/vydixclothing-cell/game/main/games/images/drive-mad.png",
+        "url": "https://vydixclothing-cell.github.io/game/games/drive-mad/index.html"
     }
 ];
 
